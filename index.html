@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
-
-
-
 </head>
 <body>
-<h1>{{"Hello, Angular!"}}</h1>
+
+<div ng-controller="ToDoController as todo">
+<h1>{{todo.items.title}}</h1>
+<h2>{{todo.items.description}}</h2>
+</div>
 
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="node_modules/angular/angular.js"></script>
