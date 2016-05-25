@@ -8,8 +8,10 @@
 <body>
 
 <div ng-controller="ToDoController as todo">
-<h1>{{todo.items.title}}</h1>
-<h2>{{todo.items.description}}</h2>
+	<div ng-repeat="item in todo.items">
+		<h1>{{item.title}}</h1>
+		<h2>{{item.description}}</h2>
+	</div>
 </div>
 
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>

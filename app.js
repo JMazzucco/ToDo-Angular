@@ -12,8 +12,8 @@
 			description: "Wash the bedroom floor"
 		},
 		{
-			title: "Wash floor",
-			description: "Wash the bedroom floor"
+			title: "iron clothes",
+			description: "iron dress clothes for work"
 		}
 	];
 
