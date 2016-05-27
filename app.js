@@ -1,8 +1,8 @@
 (function(){
 	var app = angular.module('toDo', []);
 
-	app.controller('ToDoController', function ($scope){
-		this.name;
+	app.controller('ToDoController', function(){
+		// this.item = {};
 
 		// this.newItem = {};
 

@@ -9,8 +9,9 @@
 
 <div ng-controller="ToDoController as todo">
 
-Name: <input ng-model="name">
-<h1>You entered: {{name}}</h1>
+Title: <input ng-model="item.title"/><br/>
+Description: <textarea ng-model="item.description"></textarea>
+<h1>You entered: {{item.title}} {{item.description}}</h1>
 
 <!-- 	<div ng-repeat="item in todo.items">
 		<h1>{{item.title}}</h1>
