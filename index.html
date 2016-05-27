@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
 
@@ -20,8 +21,7 @@
 		<h1>{{i.title}}</h1>
 		<h2>{{i.description}}</h2>
 
-		<button ng-click="">Edit</button>
-		<button ng-click="">Remove</button>
+	<button ng-click="todo.remove($index)">Remove</button>
 	</div>
 
 </div>

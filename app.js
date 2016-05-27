@@ -11,6 +11,11 @@
 			this.item = {};
 		};
 
+    // remove an item
+    this.remove = function(index) {
+    	this.items.splice(index, 1);
+    };
+
 	});
 
 })();
