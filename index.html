@@ -8,7 +8,11 @@
 <body>
 
 <div ng-controller="ToDoController as todo">
-	<div ng-repeat="item in todo.items">
+
+Name: <input ng-model="name">
+<h1>You entered: {{name}}</h1>
+
+<!-- 	<div ng-repeat="item in todo.items">
 		<h1>{{item.title}}</h1>
 		<h2>{{item.description}}</h2>
 
@@ -16,17 +20,17 @@
 		<button ng-click="">Remove</button>
 	</div>
 
-	<form name="itemForm">
-		<div>
-			<h3>title:</h3>
-			<textarea ng-model=""></textarea>
+	<form name="itemForm" ng-submit="todo.addReview">
 
-			<h3>Description:</h3>
-			<textarea ng-model=""></textarea>
-		</div>
+		<h3>title:</h3>
+		<textarea ng-model="todo.newItem.title"></textarea>
+
+		<h3>Description:</h3>
+		<textarea ng-model="todo.newItem.description"></textarea>
 
 		<input type="submit" value="Submit" />
-	</form>
+
+	</form> -->
 
 </div>
 

@@ -1,19 +1,15 @@
 (function(){
 	var app = angular.module('toDo', []);
 
-	app.controller('ToDoController', function(){
-		this.items = tasks;
-	});
+	app.controller('ToDoController', function ($scope){
+		this.name;
 
-	var tasks = [
-		{
-			title: "Wash floor",
-			description: "Wash the bedroom floor"
-		},
-		{
-			title: "iron clothes",
-			description: "iron dress clothes for work"
-		}
-	];
+		// this.newItem = {};
+
+		// this.addItem = function() {
+		// 	this.items.push(this.newItem);
+		// };
+
+	});
 
 })();
