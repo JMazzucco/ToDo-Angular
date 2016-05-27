@@ -5,7 +5,6 @@
 		this.items = tasks;
 	});
 
-
 	var tasks = [
 		{
 			title: "Wash floor",
@@ -16,8 +15,5 @@
 			description: "iron dress clothes for work"
 		}
 	];
-
-
-
 
 })();
