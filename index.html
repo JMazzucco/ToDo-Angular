@@ -8,32 +8,21 @@
 <body>
 
 <div ng-controller="ToDoController as todo">
-<form ng-submit=todo.addItem()>
 
-Title: <input ng-model="todo.item.title"/><br/>
-Description: <textarea ng-model="todo.item.description"></textarea>
-<h1>You entered: {{todo.item.title}} {{todo.item.description}}</h1>
- <input type="submit" value="submit" />
- </form>
-<!-- 	<div ng-repeat="item in todo.items">
-		<h1>{{item.title}}</h1>
-		<h2>{{item.description}}</h2>
+	<form ng-submit=todo.addItem()>
+		Title: <input ng-model="todo.item.title"/><br/>
+		Description: <textarea ng-model="todo.item.description"></textarea>
+		<h1>You entered: {{todo.item.title}} {{todo.item.description}}</h1>
+		<input type="submit" value="submit" />
+	</form>
+
+	<div ng-repeat="i in todo.items">
+		<h1>{{i.title}}</h1>
+		<h2>{{i.description}}</h2>
 
 		<button ng-click="">Edit</button>
 		<button ng-click="">Remove</button>
 	</div>
-
-	<form name="itemForm" ng-submit="todo.addReview">
-
-		<h3>title:</h3>
-		<textarea ng-model="todo.newItem.title"></textarea>
-
-		<h3>Description:</h3>
-		<textarea ng-model="todo.newItem.description"></textarea>
-
-		<input type="submit" value="Submit" />
-
-	</form> -->
 
 </div>
 
