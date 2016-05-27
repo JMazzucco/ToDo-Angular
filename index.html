@@ -8,11 +8,13 @@
 <body>
 
 <div ng-controller="ToDoController as todo">
+<form ng-submit=todo.addItem()>
 
-Title: <input ng-model="item.title"/><br/>
-Description: <textarea ng-model="item.description"></textarea>
-<h1>You entered: {{item.title}} {{item.description}}</h1>
-
+Title: <input ng-model="todo.item.title"/><br/>
+Description: <textarea ng-model="todo.item.description"></textarea>
+<h1>You entered: {{todo.item.title}} {{todo.item.description}}</h1>
+ <input type="submit" value="submit" />
+ </form>
 <!-- 	<div ng-repeat="item in todo.items">
 		<h1>{{item.title}}</h1>
 		<h2>{{item.description}}</h2>
@@ -35,6 +37,7 @@ Description: <textarea ng-model="item.description"></textarea>
 
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="node_modules/angular/angular.js"></script>
 <script type="text/javascript" src="app.js"></script>
