@@ -9,9 +9,9 @@
 
 <div ng-controller="ToDoController as todo">
 
-	<form ng-submit=todo.addItem()>
-		Title: <input ng-model="todo.item.title"/><br/>
-		Description: <textarea ng-model="todo.item.description"></textarea>
+	<form name="todoForm" ng-submit="todoForm.$valid && todo.addItem()" novalidate>
+		Title: <input ng-model="todo.item.title" required /><br/>
+		Description: <textarea ng-model="todo.item.description" required></textarea>
 		<h1>You entered: {{todo.item.title}} {{todo.item.description}}</h1>
 		<input type="submit" value="submit" />
 	</form>
