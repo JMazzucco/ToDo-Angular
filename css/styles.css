@@ -1,3 +1,8 @@
-.ng-invalid.ng-dirty {
-  border-color: red;
+.done-true {
+	text-decoration: line-through;
+	color: grey;
+}
+
+ul {
+	list-style: none;
 }
