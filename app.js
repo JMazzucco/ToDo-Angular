@@ -2,24 +2,17 @@
 	var app = angular.module('toDo', []);
 
 	app.controller('ToDoController', function($scope){
-		$scope.item = {};
 
 		$scope.todos =[
 			{text: 'Learn AngularJS',  done:false},
 			{text:'Build an app', done: false}
 		];
 
-		$scope.totalTodos = 4;
+		$scope.totalTodos = $scope.todos.length;
 
-		$scope.addItem = function() {
-			$scope.items.push($scope.item);
-			$scope.item = {};
+		$scope.addTodo = function() {
+			$scope.todos.push({text:$scope.formTodoText, done: false})
 		};
-
-    // remove an item
-    $scope.remove = function(index) {
-    	$scope.items.splice(index, 1);
-    };
 
 	});
 
