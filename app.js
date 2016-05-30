@@ -1,19 +1,24 @@
 (function(){
 	var app = angular.module('toDo', []);
 
-	app.controller('ToDoController', function(){
-		this.item = {};
+	app.controller('ToDoController', function($scope){
+		$scope.item = {};
 
-		this.items =[];
+		$scope.todos =[
+			{text: 'Learn AngularJS',  done:false},
+			{text:'Build an app', done: false}
+		];
 
-		this.addItem = function() {
-			this.items.push(this.item);
-			this.item = {};
+		$scope.totalTodos = $scope.todos.length;
+
+		$scope.addItem = function() {
+			$scope.items.push($scope.item);
+			$scope.item = {};
 		};
 
     // remove an item
-    this.remove = function(index) {
-    	this.items.splice(index, 1);
+    $scope.remove = function(index) {
+    	$scope.items.splice(index, 1);
     };
 
 	});
