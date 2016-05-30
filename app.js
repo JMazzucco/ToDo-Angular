@@ -9,7 +9,7 @@
 			{text:'Build an app', done: false}
 		];
 
-		$scope.totalTodos = $scope.todos.length;
+		$scope.totalTodos = 4;
 
 		$scope.addItem = function() {
 			$scope.items.push($scope.item);
